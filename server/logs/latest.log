@@ -1,0 +1,13 @@
+[00:31:06] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Stopping the server
+[00:31:06] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: 关闭服务器中
+[00:31:06] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: 保存玩家数据中
+[00:31:06] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: 保存世界中
+[00:31:06] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[00:31:06] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (world): 所有区块已保存
+[00:31:06] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[DIM-1]'/minecraft:the_nether
+[00:31:06] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): 所有区块已保存
+[00:31:06] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[DIM1]'/minecraft:the_end
+[00:31:06] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): 所有区块已保存
+[00:31:09] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (world): 所有区块已保存
+[00:31:09] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): 所有区块已保存
+[00:31:09] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): 所有区块已保存

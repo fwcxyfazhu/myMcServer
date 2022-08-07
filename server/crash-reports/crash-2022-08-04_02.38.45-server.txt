@@ -1,0 +1,170 @@
+---- Minecraft Crash Report ----
+// This is a token for 1 free hug. Redeem at your nearest Mojangsta: [~~HUG~~]
+
+Time: 2022/8/4 上午2:38
+Description: Ticking block entity
+
+java.lang.NullPointerException: Cannot read field "field_77276_a" because the return value of "net.minecraft.world.chunk.Chunk.func_76632_l()" is null
+	at org.bukkit.craftbukkit.v1_16_R3.CraftChunk.<init>(CraftChunk.java:52) ~[forge:7e29f765-296df566-9fb885e8] {re:classloading}
+	at net.minecraft.world.chunk.Chunk.<init>(Chunk.java:141) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.world.chunk.Chunk.<init>(Chunk.java:105) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at com.simibubi.create.foundation.utility.worldWrappers.chunk.EmptierChunk.<init>(EmptierChunk.java:23) ~[create:mc1.16.5_v0.3.2g] {re:classloading}
+	at com.simibubi.create.foundation.utility.worldWrappers.WrappedChunkProvider.getChunk(WrappedChunkProvider.java:60) ~[create:mc1.16.5_v0.3.2g] {re:classloading}
+	at com.simibubi.create.foundation.utility.worldWrappers.WrappedChunkProvider.func_212849_a_(WrappedChunkProvider.java:53) ~[create:mc1.16.5_v0.3.2g] {re:classloading}
+	at net.minecraft.world.World.func_217353_a(World.java:263) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.world.IWorldReader.func_217348_a(IWorldReader.java:112) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.world.World.func_212866_a_(World.java:259) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.world.World.func_175726_f(World.java:250) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at com.minecolonies.coremod.colony.ColonyManager.getColonyByPosFromWorld(ColonyManager.java:282) ~[minecolonies:1.16.5-1.0.890-RELEASE] {re:classloading}
+	at com.minecolonies.api.tileentities.TileEntityColonyBuilding.updateColonyReferences(TileEntityColonyBuilding.java:147) ~[minecolonies:1.16.5-1.0.890-RELEASE] {re:classloading}
+	at com.minecolonies.api.tileentities.TileEntityColonyBuilding.getColony(TileEntityColonyBuilding.java:133) ~[minecolonies:1.16.5-1.0.890-RELEASE] {re:classloading}
+	at com.minecolonies.api.tileentities.AbstractTileEntityColonyBuilding.readSchematicDataFromNBT(AbstractTileEntityColonyBuilding.java:225) ~[minecolonies:1.16.5-1.0.890-RELEASE] {re:classloading}
+	at com.minecolonies.api.tileentities.AbstractTileEntityColonyBuilding.func_230337_a_(AbstractTileEntityColonyBuilding.java:215) ~[minecolonies:1.16.5-1.0.890-RELEASE] {re:classloading}
+	at com.minecolonies.api.tileentities.TileEntityColonyBuilding.func_230337_a_(TileEntityColonyBuilding.java:329) ~[minecolonies:1.16.5-1.0.890-RELEASE] {re:classloading}
+	at net.minecraft.world.gen.feature.template.Template.func_237146_a_(Template.java:252) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.gen.feature.template.Template.func_237152_b_(Template.java:203) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.gen.feature.template.Template.func_237144_a_(Template.java:199) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at com.simibubi.create.content.schematics.SchematicPrinter.loadSchematic(SchematicPrinter.java:93) ~[create:mc1.16.5_v0.3.2g] {re:classloading}
+	at com.simibubi.create.content.schematics.block.SchematicannonTileEntity.initializePrinter(SchematicannonTileEntity.java:458) ~[create:mc1.16.5_v0.3.2g] {re:classloading,pl:runtimedistcleaner:A}
+	at com.simibubi.create.content.schematics.block.SchematicannonTileEntity.tickPaperPrinter(SchematicannonTileEntity.java:676) ~[create:mc1.16.5_v0.3.2g] {re:classloading,pl:runtimedistcleaner:A}
+	at com.simibubi.create.content.schematics.block.SchematicannonTileEntity.func_73660_a(SchematicannonTileEntity.java:288) ~[create:mc1.16.5_v0.3.2g] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.world.World.func_217391_K(World.java:670) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.world.server.ServerWorld.func_72835_b(ServerWorld.java:544) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:1090) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.server.dedicated.DedicatedServer.func_71190_q(DedicatedServer.java:338) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:1003) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:818) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_240783_a_(MinecraftServer.java:269) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at java.lang.Thread.run(Thread.java:833) ~[?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at org.bukkit.craftbukkit.v1_16_R3.CraftChunk.<init>(CraftChunk.java:52) ~[forge:7e29f765-296df566-9fb885e8] {re:classloading}
+	at net.minecraft.world.chunk.Chunk.<init>(Chunk.java:141) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.world.chunk.Chunk.<init>(Chunk.java:105) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at com.simibubi.create.foundation.utility.worldWrappers.chunk.EmptierChunk.<init>(EmptierChunk.java:23) ~[create:mc1.16.5_v0.3.2g] {re:classloading}
+	at com.simibubi.create.foundation.utility.worldWrappers.WrappedChunkProvider.getChunk(WrappedChunkProvider.java:60) ~[create:mc1.16.5_v0.3.2g] {re:classloading}
+	at com.simibubi.create.foundation.utility.worldWrappers.WrappedChunkProvider.func_212849_a_(WrappedChunkProvider.java:53) ~[create:mc1.16.5_v0.3.2g] {re:classloading}
+	at net.minecraft.world.World.func_217353_a(World.java:263) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.world.IWorldReader.func_217348_a(IWorldReader.java:112) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.world.World.func_212866_a_(World.java:259) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.world.World.func_175726_f(World.java:250) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at com.minecolonies.coremod.colony.ColonyManager.getColonyByPosFromWorld(ColonyManager.java:282) ~[minecolonies:1.16.5-1.0.890-RELEASE] {re:classloading}
+	at com.minecolonies.api.tileentities.TileEntityColonyBuilding.updateColonyReferences(TileEntityColonyBuilding.java:147) ~[minecolonies:1.16.5-1.0.890-RELEASE] {re:classloading}
+	at com.minecolonies.api.tileentities.TileEntityColonyBuilding.getColony(TileEntityColonyBuilding.java:133) ~[minecolonies:1.16.5-1.0.890-RELEASE] {re:classloading}
+	at com.minecolonies.api.tileentities.AbstractTileEntityColonyBuilding.readSchematicDataFromNBT(AbstractTileEntityColonyBuilding.java:225) ~[minecolonies:1.16.5-1.0.890-RELEASE] {re:classloading}
+	at com.minecolonies.api.tileentities.AbstractTileEntityColonyBuilding.func_230337_a_(AbstractTileEntityColonyBuilding.java:215) ~[minecolonies:1.16.5-1.0.890-RELEASE] {re:classloading}
+	at com.minecolonies.api.tileentities.TileEntityColonyBuilding.func_230337_a_(TileEntityColonyBuilding.java:329) ~[minecolonies:1.16.5-1.0.890-RELEASE] {re:classloading}
+	at net.minecraft.world.gen.feature.template.Template.func_237146_a_(Template.java:252) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.gen.feature.template.Template.func_237152_b_(Template.java:203) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.gen.feature.template.Template.func_237144_a_(Template.java:199) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at com.simibubi.create.content.schematics.SchematicPrinter.loadSchematic(SchematicPrinter.java:93) ~[create:mc1.16.5_v0.3.2g] {re:classloading}
+	at com.simibubi.create.content.schematics.block.SchematicannonTileEntity.initializePrinter(SchematicannonTileEntity.java:458) ~[create:mc1.16.5_v0.3.2g] {re:classloading,pl:runtimedistcleaner:A}
+	at com.simibubi.create.content.schematics.block.SchematicannonTileEntity.tickPaperPrinter(SchematicannonTileEntity.java:676) ~[create:mc1.16.5_v0.3.2g] {re:classloading,pl:runtimedistcleaner:A}
+	at com.simibubi.create.content.schematics.block.SchematicannonTileEntity.func_73660_a(SchematicannonTileEntity.java:288) ~[create:mc1.16.5_v0.3.2g] {re:classloading,pl:runtimedistcleaner:A}
+-- Block entity being ticked --
+Details:
+	Name: create:schematicannon // com.simibubi.create.content.schematics.block.SchematicannonTileEntity
+	Block: Block{create:schematicannon}
+	Block location: World: (350,70,-509), Chunk: (at 14,4,3 in 21,-32; contains blocks 336,0,-512 to 351,255,-497), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,0,-512 to 511,255,-1)
+	Block: Block{create:schematicannon}
+	Block location: World: (350,70,-509), Chunk: (at 14,4,3 in 21,-32; contains blocks 336,0,-512 to 351,255,-497), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,0,-512 to 511,255,-1)
+Stacktrace:
+	at net.minecraft.world.World.func_217391_K(World.java:670) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.world.server.ServerWorld.func_72835_b(ServerWorld.java:544) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+
+
+-- Affected level --
+Details:
+	All players: 1 total; [ServerPlayerEntity['Rinne1211'/32, l='ServerLevel[world]', x=268.82, y=64.00, z=-552.93](TextComponent{text='Rinne1211', siblings=[], style=Style{ color=null, bold=null, italic=null, underlined=null, strikethrough=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null, font=minecraft:default}} at 268.82200212676474,64.0,-552.9250000119209)]
+	Chunk stats: ServerChunkCache: 4965
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (192,70,-64), Chunk: (at 0,4,0 in 12,-4; contains blocks 192,0,-64 to 207,255,-49), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,0,-512 to 511,255,-1)
+	Level time: 8287200 game time, 2846 day time
+	Level name: world
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Level weather: Rain time: 1 (now: false), thunder time: 1 (now: false)
+	Known server brands: Mohist
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:1090) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.server.dedicated.DedicatedServer.func_71190_q(DedicatedServer.java:338) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:1003) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:818) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_240783_a_(MinecraftServer.java:269) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at java.lang.Thread.run(Thread.java:833) ~[?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Mohist Version: 1.16.5-1055
+	Operating System: Windows Server 2022 (amd64) version 10.0
+	Java Version: 18.0.2, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 1041381896 bytes (993 MB) / 3678404608 bytes (3508 MB) up to 7516192768 bytes (7168 MB)
+	CPUs: 4
+	JVM Flags: 1 total; -Xmx7G
+	ModLauncher: 8.1.3+8.1.3+main-8.1.x.c94d18ec
+	ModLauncher启动目标: fmlserver
+	ModLauncher命名: srg
+	ModLauncher服务: 
+		/mixin-0.8.4.jar mixin PLUGINSERVICE 
+		/eventbus-4.0.0.jar eventbus PLUGINSERVICE 
+		/mohist-1.16.5-1055-server.jar object_holder_definalize PLUGINSERVICE 
+		/mohist-1.16.5-1055-server.jar runtime_enum_extender PLUGINSERVICE 
+		/mohist-1.16.5-1055-server.jar capability_inject_definalize PLUGINSERVICE 
+		/accesstransformers-3.0.1.jar accesstransformer PLUGINSERVICE 
+		/mohist-1.16.5-1055-server.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.4.jar mixin TRANSFORMATIONSERVICE 
+		/mohist-1.16.5-1055-server.jar fml TRANSFORMATIONSERVICE 
+	FML: 36.2
+	Forge: com.mohistmc:36.2.39
+	FML语言提供: 
+		javafml@36.2
+		minecraft@1
+	Mod List: 
+		mohist-1.16.5-1055-server.jar                     |Minecraft                     |minecraft                     |1.16.5              |DONE      |Manifest: NOSIGNATURE
+		TConstruct-1.16.5-3.3.4.335.jar                   |Tinkers' Construct            |tconstruct                    |3.3.4.335           |DONE      |Manifest: NOSIGNATURE
+		structurize-1.16.5-1.0.392-RELEASE.jar            |Structurize                   |structurize                   |1.16.5-1.0.392-RELEA|DONE      |Manifest: NOSIGNATURE
+		minecolonies-1.16.5-1.0.890-RELEASE.jar           |MineColonies                  |minecolonies                  |1.16.5-1.0.890-RELEA|DONE      |Manifest: NOSIGNATURE
+		MekanismTools-1.16.5-10.1.2.457.jar               |Mekanism: Tools               |mekanismtools                 |10.1.2              |DONE      |Manifest: NOSIGNATURE
+		MekanismAdditions-1.16.5-10.1.2.457.jar           |Mekanism: Additions           |mekanismadditions             |10.1.2              |DONE      |Manifest: NOSIGNATURE
+		MekanismGenerators-1.16.5-10.1.2.457.jar          |Mekanism: Generators          |mekanismgenerators            |10.1.2              |DONE      |Manifest: NOSIGNATURE
+		betterwithminecolonies-1.16.4-1.16.17.jar         |Better With Minecolonies      |betterwithminecolonies        |1.16.4-1.16.17      |DONE      |Manifest: NOSIGNATURE
+		jei-1.16.5-7.7.1.152.jar                          |Just Enough Items             |jei                           |7.7.1.152           |DONE      |Manifest: NOSIGNATURE
+		Mekanism-1.16.5-10.1.2.457.jar                    |Mekanism                      |mekanism                      |10.1.2              |DONE      |Manifest: NOSIGNATURE
+		mohist-1.16.5-1055-universal.jar                  |Forge                         |forge                         |36.2.39             |DONE      |Manifest: NOSIGNATURE
+		cofh_core-1.16.5-1.5.0.11.jar                     |CoFH Core                     |cofh_core                     |1.5.0.11            |DONE      |Manifest: 75:0b:cc:9b:64:2e:9b:c4:41:d1:95:00:71:ee:87:1a:b3:5e:4b:da:8e:e8:39:00:fd:5d:e5:9c:40:42:33:09
+		touhoulittlemaid-1.16.5-1.0.2.jar                 |Touhou Little Maid            |touhou_little_maid            |NONE                |DONE      |Manifest: NOSIGNATURE
+		thermal_foundation-1.16.5-1.5.0.14.jar            |Thermal Series                |thermal                       |1.5.0.14            |DONE      |Manifest: 75:0b:cc:9b:64:2e:9b:c4:41:d1:95:00:71:ee:87:1a:b3:5e:4b:da:8e:e8:39:00:fd:5d:e5:9c:40:42:33:09
+		thermal_expansion-1.16.5-1.5.0.7.jar              |Thermal Expansion             |thermal_expansion             |1.5.0.7             |DONE      |Manifest: 75:0b:cc:9b:64:2e:9b:c4:41:d1:95:00:71:ee:87:1a:b3:5e:4b:da:8e:e8:39:00:fd:5d:e5:9c:40:42:33:09
+		thermal_innovation-1.16.5-1.5.0.4.jar             |Thermal Innovation            |thermal_innovation            |1.5.0.4             |DONE      |Manifest: 75:0b:cc:9b:64:2e:9b:c4:41:d1:95:00:71:ee:87:1a:b3:5e:4b:da:8e:e8:39:00:fd:5d:e5:9c:40:42:33:09
+		thermal_locomotion-1.16.5-1.5.0.4.jar             |Thermal Locomotion            |thermal_locomotion            |1.5.0.4             |DONE      |Manifest: 75:0b:cc:9b:64:2e:9b:c4:41:d1:95:00:71:ee:87:1a:b3:5e:4b:da:8e:e8:39:00:fd:5d:e5:9c:40:42:33:09
+		flywheel-1.16-0.2.5.jar                           |Flywheel                      |flywheel                      |1.16-0.2.5          |DONE      |Manifest: NOSIGNATURE
+		Patchouli-1.16.4-53.3.jar                         |Patchouli                     |patchouli                     |1.16.4-53.3         |DONE      |Manifest: NOSIGNATURE
+		Mantle-1.16.5-1.6.157.jar                         |Mantle                        |mantle                        |1.6.157             |DONE      |Manifest: NOSIGNATURE
+		create-mc1.16.5_v0.3.2g.jar                       |Create                        |create                        |v0.3.2g             |DONE      |Manifest: NOSIGNATURE
+		thermal_cultivation-1.16.5-1.5.0.4.jar            |Thermal Cultivation           |thermal_cultivation           |1.5.0.4             |DONE      |Manifest: 75:0b:cc:9b:64:2e:9b:c4:41:d1:95:00:71:ee:87:1a:b3:5e:4b:da:8e:e8:39:00:fd:5d:e5:9c:40:42:33:09
+		corpse-1.16.5-1.0.6.jar                           |Corpse                        |corpse                        |1.16.5-1.0.6        |DONE      |Manifest: NOSIGNATURE
+		OreExcavation-1.8.157.jar                         |Ore Excavation                |oreexcavation                 |1.8.157             |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 0cee1c99-99ac-4654-a8d7-5c3637c5b6c0
+	CraftBukkit Information: 
+   Running: Mohist version 1.16.5-1055 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT) false
+   Plugins: {}
+   Warnings: DEFAULT
+   Reload Count: 0
+   Threads: { RUNNABLE DestroyJavaVM: [], TIMED_WAITING Worker-Main-5: [java.base@18.0.2/jdk.internal.misc.Unsafe.park(Native Method), java.base@18.0.2/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:410), java.base@18.0.2/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1726), java.base@18.0.2/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623), java.base@18.0.2/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)], WAITING Craft Async Scheduler Management Thread: [java.base@18.0.2/jdk.internal.misc.Unsafe.park(Native Method), java.base@18.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341), java.base@18.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506), java.base@18.0.2/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3464), java.base@18.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3435), java.base@18.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623), java.base@18.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435), java.base@18.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062), java.base@18.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122), java.base@18.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635), java.base@18.0.2/java.lang.Thread.run(Thread.java:833)], TIMED_WAITING Common-Cleaner: [java.base@18.0.2/java.lang.Object.wait(Native Method), java.base@18.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155), java.base@18.0.2/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140), java.base@18.0.2/java.lang.Thread.run(Thread.java:833), java.base@18.0.2/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:162)], TIMED_WAITING Server console handler: [java.base@18.0.2/java.lang.Object.wait(Native Method), app//org.jline.utils.NonBlockingPumpReader.wait(NonBlockingPumpReader.java:55), app//org.jline.utils.NonBlockingPumpReader.read(NonBlockingPumpReader.java:101), app//org.jline.utils.NonBlockingReader.read(NonBlockingReader.java:57), app//org.jline.keymap.BindingReader.readCharacter(BindingReader.java:133), app//org.jline.keymap.BindingReader.readBinding(BindingReader.java:110), app//org.jline.keymap.BindingReader.readBinding(BindingReader.java:61), app//org.jline.reader.impl.LineReaderImpl.doReadBinding(LineReaderImpl.java:848), app//org.jline.reader.impl.LineReaderImpl.readBinding(LineReaderImpl.java:868), app//org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:575), app//org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:418), net.minecraftforge.server.console.TerminalHandler.handleCommands(TerminalHandler.java:60), net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:100)], WAITING Worker-Main-10: [java.base@18.0.2/jdk.internal.misc.Unsafe.park(Native Method), java.base@18.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341), java.base@18.0.2/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724), java.base@18.0.2/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623), java.base@18.0.2/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)], RUNNABLE Attach Listener: [], RUNNABLE Notification Thread: [], TIMED_WAITING Worker-Main-6: [java.base@18.0.2/jdk.internal.misc.Unsafe.park(Native Method), java.base@18.0.2/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:410), java.base@18.0.2/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1726), java.base@18.0.2/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623), java.base@18.0.2/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)], RUNNABLE FileSystemWatchService: [java.base@18.0.2/sun.nio.fs.WindowsNativeDispatcher.GetQueuedCompletionStatus0(Native Method), java.base@18.0.2/sun.nio.fs.WindowsNativeDispatcher.GetQueuedCompletionStatus(WindowsNativeDispatcher.java:1065), java.base@18.0.2/sun.nio.fs.WindowsWatchService$Poller.run(WindowsWatchService.java:587), java.base@18.0.2/java.lang.Thread.run(Thread.java:833)], WAITING Snooper Timer: [java.base@18.0.2/java.lang.Object.wait(Native Method), java.base@18.0.2/java.lang.Object.wait(Object.java:338), java.base@18.0.2/java.util.TimerThread.mainLoop(Timer.java:537), java.base@18.0.2/java.util.TimerThread.run(Timer.java:516)], WAITING Minecolonies Pathfinding Worker #0: [java.base@18.0.2/jdk.internal.misc.Unsafe.park(Native Method), java.base@18.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341), java.base@18.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506), java.base@18.0.2/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3464), java.base@18.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3435), java.base@18.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623), java.base@18.0.2/java.util.concurrent.LinkedBlockingDeque.takeFirst(LinkedBlockingDeque.java:485), java.base@18.0.2/java.util.concurrent.LinkedBlockingDeque.take(LinkedBlockingDeque.java:673), java.base@18.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062), java.base@18.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122), java.base@18.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635), java.base@18.0.2/java.lang.Thread.run(Thread.java:833)], TIMED_WAITING Thread-0: [java.base@18.0.2/jdk.internal.misc.Unsafe.park(Native Method), java.base@18.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:376), app//com.electronwill.nightconfig.core.file.FileWatcher$WatcherThread.run(FileWatcher.java:190)], RUNNABLE WindowsStreamPump: [app//org.fusesource.jansi.internal.Kernel32.WaitForSingleObject(Native Method), app//org.fusesource.jansi.internal.WindowsSupport.readConsoleInput(WindowsSupport.java:97), app//org.jline.terminal.impl.jansi.win.JansiWinSysTerminal.processConsoleInput(JansiWinSysTerminal.java:112), app//org.jline.terminal.impl.AbstractWindowsTerminal.pump(AbstractWindowsTerminal.java:458), app//org.jline.terminal.impl.AbstractWindowsTerminal$$Lambda$98/0x0000000800d1ab10.run(Unknown Source), java.base@18.0.2/java.lang.Thread.run(Thread.java:833)], RUNNABLE FileSystemWatchService: [java.base@18.0.2/sun.nio.fs.WindowsNativeDispatcher.GetQueuedCompletionStatus0(Native Method), java.base@18.0.2/sun.nio.fs.WindowsNativeDispatcher.GetQueuedCompletionStatus(WindowsNativeDispatcher.java:1065), java.base@18.0.2/sun.nio.fs.WindowsWatchService$Poller.run(WindowsWatchService.java:587), java.base@18.0.2/java.lang.Thread.run(Thread.java:833)], RUNNABLE Netty Server IO #1: [java.base@18.0.2/sun.nio.ch.WEPoll.wait(Native Method), java.base@18.0.2/sun.nio.ch.WEPollSelectorImpl.doSelect(WEPollSelectorImpl.java:111), java.base@18.0.2/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129), java.base@18.0.2/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:141), app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:756), app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:411), app//io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884), java.base@18.0.2/java.lang.Thread.run(Thread.java:833)], TIMED_WAITING Spigot Watchdog Thread: [java.base@18.0.2/java.lang.Thread.sleep(Native Method), org.spigotmc.WatchdogThread.run(WatchdogThread.java:156)], TIMED_WAITING Timer hack thread: [java.base@18.0.2/java.lang.Thread.sleep(Native Method), net.minecraft.util.Util$6.run(Util.java:506)], TIMED_WAITING Metrics - 1: [java.base@18.0.2/jdk.internal.misc.Unsafe.park(Native Method), java.base@18.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252), java.base@18.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672), java.base@18.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182), java.base@18.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899), java.base@18.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062), java.base@18.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122), java.base@18.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635), java.base@18.0.2/java.lang.Thread.run(Thread.java:833)], RUNNABLE Netty Server IO #2: [java.base@18.0.2/sun.nio.ch.WEPoll.wait(Native Method), java.base@18.0.2/sun.nio.ch.WEPollSelectorImpl.doSelect(WEPollSelectorImpl.java:111), java.base@18.0.2/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129), java.base@18.0.2/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:141), app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:756), app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:411), app//io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884), java.base@18.0.2/java.lang.Thread.run(Thread.java:833)], TIMED_WAITING IO-Worker-15: [java.base@18.0.2/jdk.internal.misc.Unsafe.park(Native Method), java.base@18.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252), java.base@18.0.2/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401), java.base@18.0.2/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903), java.base@18.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061), java.base@18.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122), java.base@18.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635), java.base@18.0.2/java.lang.Thread.run(Thread.java:833)], RUNNABLE Netty Server IO #0: [java.base@18.0.2/sun.nio.ch.WEPoll.wait(Native Method), java.base@18.0.2/sun.nio.ch.WEPollSelectorImpl.doSelect(WEPollSelectorImpl.java:111), java.base@18.0.2/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129), java.base@18.0.2/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:141), app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:756), app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:411), app//io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884), java.base@18.0.2/java.lang.Thread.run(Thread.java:833)], RUNNABLE Reference Handler: [java.base@18.0.2/java.lang.ref.Reference.waitForReferencePendingList(Native Method), java.base@18.0.2/java.lang.ref.Reference.processPendingReferences(Reference.java:253), java.base@18.0.2/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:215)], WAITING Finalizer: [java.base@18.0.2/java.lang.Object.wait(Native Method), java.base@18.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155), java.base@18.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176), java.base@18.0.2/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:183)], TIMED_WAITING IO-Worker-14: [java.base@18.0.2/jdk.internal.misc.Unsafe.park(Native Method), java.base@18.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252), java.base@18.0.2/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401), java.base@18.0.2/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903), java.base@18.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061), java.base@18.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122), java.base@18.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635), java.base@18.0.2/java.lang.Thread.run(Thread.java:833)], RUNNABLE Signal Dispatcher: [], TIMED_WAITING IO-Worker-16: [java.base@18.0.2/jdk.internal.misc.Unsafe.park(Native Method), java.base@18.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252), java.base@18.0.2/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401), java.base@18.0.2/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903), java.base@18.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061), java.base@18.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122), java.base@18.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635), java.base@18.0.2/java.lang.Thread.run(Thread.java:833)], RUNNABLE Server thread: [java.base@18.0.2/java.lang.Thread.dumpThreads(Native Method), java.base@18.0.2/java.lang.Thread.getAllStackTraces(Thread.java:1662), org.bukkit.craftbukkit.v1_16_R3.CraftCrashReport.call(CraftCrashReport.java:33), net.minecraft.crash.CrashReportCategory.func_189529_a(CrashReportCategory.java:81), net.minecraft.crash.CrashReport.func_71504_g(CrashReport.java:78), net.minecraft.crash.CrashReport.<init>(CrashReport.java:40), net.minecraft.crash.CrashReport.func_85055_a(CrashReport.java:247), net.minecraft.world.World.func_217391_K(World.java:677), net.minecraft.world.server.ServerWorld.func_72835_b(ServerWorld.java:544), net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:1090), net.minecraft.server.dedicated.DedicatedServer.func_71190_q(DedicatedServer.java:338), net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:1003), net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:818), net.minecraft.server.MinecraftServer.func_240783_a_(MinecraftServer.java:269), net.minecraft.server.MinecraftServer$$Lambda$10790/0x000000080208a7e8.run(Unknown Source), java.base@18.0.2/java.lang.Thread.run(Thread.java:833)], RUNNABLE FileSystemWatchService: [java.base@18.0.2/sun.nio.fs.WindowsNativeDispatcher.GetQueuedCompletionStatus0(Native Method), java.base@18.0.2/sun.nio.fs.WindowsNativeDispatcher.GetQueuedCompletionStatus(WindowsNativeDispatcher.java:1065), java.base@18.0.2/sun.nio.fs.WindowsWatchService$Poller.run(WindowsWatchService.java:587), java.base@18.0.2/java.lang.Thread.run(Thread.java:833)], TIMED_WAITING ObjectCleanerThread: [java.base@18.0.2/java.lang.Object.wait(Native Method), java.base@18.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155), app//io.netty.util.internal.ObjectCleaner$1.run(ObjectCleaner.java:54), app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30), java.base@18.0.2/java.lang.Thread.run(Thread.java:833)],}
+   
+   Force Loaded Chunks: { world: {}, DIM-1: {}, DIM1: {},}
+	Player Count: 1 / 20; [ServerPlayerEntity['Rinne1211'/32, l='ServerLevel[world]', x=268.82, y=64.00, z=-552.93](TextComponent{text='Rinne1211', siblings=[], style=Style{ color=null, bold=null, italic=null, underlined=null, strikethrough=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null, font=minecraft:default}} at 268.82200212676474,64.0,-552.9250000119209)]
+	Data Packs: vanilla, mod:tconstruct, mod:structurize, mod:minecolonies (incompatible), mod:forge, mod:cofh_core (incompatible), mod:thermal (incompatible), mod:thermal_expansion (incompatible), mod:thermal_innovation (incompatible), mod:thermal_locomotion (incompatible), mod:flywheel, mod:mantle (incompatible), mod:create, mod:thermal_cultivation (incompatible), mod:corpse, mod:oreexcavation, file/bukkit, mod:mekanismtools, mod:mekanismadditions, mod:mekanismgenerators, mod:mekanism, mod:touhou_little_maid, mod:betterwithminecolonies (incompatible), mod:jei, mod:patchouli (incompatible)
+	Is Modded: Definitely; Server brand changed to 'Mohist'
+	Type: Dedicated Server (map_server.txt)

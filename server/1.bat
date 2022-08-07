@@ -1,0 +1,1 @@
+java -Xmx7G -jar mohist-1.16.5-1055-server.jar

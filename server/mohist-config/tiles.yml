@@ -1,0 +1,323 @@
+# Welcome to Mohist tile tick configuration!
+# This opens up good TPS savings if used wisely.
+# 'overrides' section populates itself over time.
+# -=-=-=-=-
+# Simple usage cases:
+# 'skip-every: 50' - skips every 50th tick
+# 'skip-every: 0' - tick limiter is not applied (vanilla behaviour)
+# 'skip-every: 1' - tile will not tick at all (skips every 1st tick)
+# 'skip-every: default' - value is grabbed from 'defaults' section
+# Values in range of 0 up to 1000 can be used, you won't need more than that.
+# -=-=-=-=-
+
+defaults:
+  skip-every: 0
+overrides:
+  net-minecraft-tileentity-MobSpawnerTileEntity:
+    skip-every: default
+  net-minecraft-tileentity-ChestTileEntity:
+    skip-every: default
+  net-minecraft-tileentity-BrewingStandTileEntity:
+    skip-every: default
+  net-minecraft-tileentity-BellTileEntity:
+    skip-every: default
+  net-minecraft-tileentity-FurnaceTileEntity:
+    skip-every: default
+  net-minecraft-tileentity-BeehiveTileEntity:
+    skip-every: default
+  net-minecraft-tileentity-SmokerTileEntity:
+    skip-every: default
+  net-minecraft-tileentity-BlastFurnaceTileEntity:
+    skip-every: default
+  com-minecolonies-api-tileentities-TileEntityColonyBuilding:
+    skip-every: default
+  net-minecraft-tileentity-CampfireTileEntity:
+    skip-every: default
+  com-minecolonies-coremod-tileentities-TileEntityBarrel:
+    skip-every: default
+  com-minecolonies-coremod-tileentities-TileEntityWareHouse:
+    skip-every: default
+  slimeknights-tconstruct-smeltery-tileentity-controller-MelterTileEntity:
+    skip-every: default
+  slimeknights-tconstruct-smeltery-tileentity-CastingTileEntity$Table:
+    skip-every: default
+  slimeknights-tconstruct-smeltery-tileentity-ChannelTileEntity:
+    skip-every: default
+  slimeknights-tconstruct-smeltery-tileentity-CastingTileEntity$Basin:
+    skip-every: default
+  slimeknights-tconstruct-smeltery-tileentity-FaucetTileEntity:
+    skip-every: default
+  slimeknights-tconstruct-smeltery-tileentity-controller-SmelteryTileEntity:
+    skip-every: default
+  net-minecraft-tileentity-HopperTileEntity:
+    skip-every: default
+  cofh-thermal-expansion-tileentity-machine-MachinePulverizerTile:
+    skip-every: default
+  cofh-thermal-expansion-tileentity-dynamo-DynamoStirlingTile:
+    skip-every: default
+  cofh-thermal-expansion-tileentity-dynamo-DynamoCompressionTile:
+    skip-every: default
+  cofh-thermal-expansion-tileentity-dynamo-DynamoMagmaticTile:
+    skip-every: default
+  cofh-thermal-expansion-tileentity-dynamo-DynamoGourmandTile:
+    skip-every: default
+  cofh-thermal-expansion-tileentity-machine-MachineSawmillTile:
+    skip-every: default
+  cofh-thermal-expansion-tileentity-machine-MachineFurnaceTile:
+    skip-every: default
+  cofh-thermal-core-tileentity-storage-EnergyCellTile:
+    skip-every: default
+  mekanism-generators-common-tile-TileEntityHeatGenerator:
+    skip-every: default
+  mekanism-generators-common-tile-TileEntitySolarGenerator:
+    skip-every: default
+  mekanism-common-tile-transmitter-TileEntityUniversalCable:
+    skip-every: default
+  mekanism-common-tile-TileEntityEnergyCube:
+    skip-every: default
+  mekanism-common-tile-machine-TileEntityMetallurgicInfuser:
+    skip-every: default
+  net-minecraft-tileentity-SkullTileEntity:
+    skip-every: default
+  mekanism-common-tile-machine-TileEntityEnergizedSmelter:
+    skip-every: default
+  mekanism-common-tile-machine-TileEntityEnrichmentChamber:
+    skip-every: default
+  mekanism-common-tile-machine-TileEntityCrusher:
+    skip-every: default
+  mekanism-generators-common-tile-TileEntityGasGenerator:
+    skip-every: default
+  mekanism-common-tile-machine-TileEntityElectrolyticSeparator:
+    skip-every: default
+  mekanism-common-tile-TileEntityFluidTank:
+    skip-every: default
+  mekanism-common-tile-transmitter-TileEntityMechanicalPipe:
+    skip-every: default
+  net-minecraft-tileentity-EnderChestTileEntity:
+    skip-every: default
+  mekanism-common-tile-transmitter-TileEntityPressurizedTube:
+    skip-every: default
+  mekanism-common-tile-machine-TileEntityPurificationChamber:
+    skip-every: default
+  mekanism-common-tile-transmitter-TileEntityLogisticalTransporter:
+    skip-every: default
+  mekanism-common-tile-machine-TileEntityOsmiumCompressor:
+    skip-every: default
+  mekanism-generators-common-tile-TileEntityBioGenerator:
+    skip-every: default
+  mekanism-common-tile-factory-TileEntitySawingFactory:
+    skip-every: default
+  mekanism-common-tile-machine-TileEntityDigitalMiner:
+    skip-every: default
+  cofh-thermal-expansion-tileentity-dynamo-DynamoNumismaticTile:
+    skip-every: default
+  cofh-thermal-expansion-tileentity-dynamo-DynamoDisenchantmentTile:
+    skip-every: default
+  mekanism-generators-common-tile-TileEntityWindGenerator:
+    skip-every: default
+  mekanism-common-tile-TileEntityChemicalTank:
+    skip-every: default
+  mekanism-common-tile-TileEntityChargepad:
+    skip-every: default
+  mekanism-common-tile-machine-TileEntityPressurizedReactionChamber:
+    skip-every: default
+  mekanism-common-tile-multiblock-TileEntityThermalEvaporationBlock:
+    skip-every: default
+  mekanism-common-tile-multiblock-TileEntityThermalEvaporationValve:
+    skip-every: default
+  mekanism-common-tile-multiblock-TileEntityThermalEvaporationController:
+    skip-every: default
+  mekanism-common-tile-machine-TileEntityElectricPump:
+    skip-every: default
+  mekanism-common-tile-machine-TileEntityResistiveHeater:
+    skip-every: default
+  mekanism-generators-common-tile-TileEntityAdvancedSolarGenerator:
+    skip-every: default
+  slimeknights-tconstruct-smeltery-tileentity-controller-AlloyerTileEntity:
+    skip-every: default
+  mekanism-generators-common-tile-fission-TileEntityFissionReactorCasing:
+    skip-every: default
+  mekanism-generators-common-tile-fission-TileEntityFissionReactorPort:
+    skip-every: default
+  mekanism-generators-common-tile-fission-TileEntityFissionFuelAssembly:
+    skip-every: default
+  mekanism-generators-common-tile-fission-TileEntityControlRodAssembly:
+    skip-every: default
+  net-minecraft-tileentity-BeaconTileEntity:
+    skip-every: default
+  mekanism-generators-common-tile-turbine-TileEntityTurbineCasing:
+    skip-every: default
+  mekanism-generators-common-tile-turbine-TileEntityTurbineRotor:
+    skip-every: default
+  mekanism-generators-common-tile-turbine-TileEntityRotationalComplex:
+    skip-every: default
+  mekanism-common-tile-TileEntityPressureDisperser:
+    skip-every: default
+  mekanism-generators-common-tile-turbine-TileEntityElectromagneticCoil:
+    skip-every: default
+  mekanism-generators-common-tile-turbine-TileEntitySaturatingCondenser:
+    skip-every: default
+  mekanism-generators-common-tile-turbine-TileEntityTurbineValve:
+    skip-every: default
+  mekanism-generators-common-tile-turbine-TileEntityTurbineVent:
+    skip-every: default
+  mekanism-common-tile-multiblock-TileEntityDynamicTank:
+    skip-every: default
+  mekanism-common-tile-machine-TileEntityRotaryCondensentrator:
+    skip-every: default
+  mekanism-common-tile-machine-TileEntityChemicalOxidizer:
+    skip-every: default
+  mekanism-common-tile-machine-TileEntityChemicalInfuser:
+    skip-every: default
+  mekanism-common-tile-machine-TileEntityChemicalDissolutionChamber:
+    skip-every: default
+  mekanism-common-tile-machine-TileEntityIsotopicCentrifuge:
+    skip-every: default
+  net-minecraft-tileentity-TrappedChestTileEntity:
+    skip-every: default
+  mekanism-common-tile-TileEntityBin:
+    skip-every: default
+  mekanism-common-tile-factory-TileEntityItemStackToItemStackFactory:
+    skip-every: default
+  mekanism-common-tile-factory-TileEntityItemStackGasToItemStackFactory:
+    skip-every: default
+  mekanism-common-tile-TileEntityRadioactiveWasteBarrel:
+    skip-every: default
+  mekanism-common-tile-machine-TileEntitySolarNeutronActivator:
+    skip-every: default
+  mekanism-common-tile-TileEntityModificationStation:
+    skip-every: default
+  com-github-tartaricacid-touhoulittlemaid-tileentity-TileEntityMaidBeacon:
+    skip-every: default
+  com-simibubi-create-content-contraptions-components-clock-CuckooClockTileEntity:
+    skip-every: default
+  mekanism-common-tile-TileEntityTeleporter:
+    skip-every: default
+  mekanism-common-tile-machine-TileEntityNutritionalLiquifier:
+    skip-every: default
+  mekanism-common-tile-machine-TileEntityAntiprotonicNucleosynthesizer:
+    skip-every: default
+  mekanism-common-tile-TileEntityLogisticalSorter:
+    skip-every: default
+  slimeknights-tconstruct-smeltery-tileentity-controller-FoundryTileEntity:
+    skip-every: default
+  mekanism-common-tile-TileEntityPersonalChest:
+    skip-every: default
+  mekanism-generators-common-tile-fusion-TileEntityFusionReactorBlock:
+    skip-every: default
+  mekanism-generators-common-tile-fusion-TileEntityFusionReactorPort:
+    skip-every: default
+  mekanism-generators-common-tile-fusion-TileEntityLaserFocusMatrix:
+    skip-every: default
+  mekanism-generators-common-tile-fusion-TileEntityFusionReactorController:
+    skip-every: default
+  mekanism-common-tile-laser-TileEntityLaserAmplifier:
+    skip-every: default
+  mekanism-generators-common-tile-TileEntityReactorGlass:
+    skip-every: default
+  mekanism-common-tile-laser-TileEntityLaser:
+    skip-every: default
+  mekanism-common-tile-laser-TileEntityLaserTractorBeam:
+    skip-every: default
+  net-minecraft-tileentity-PistonTileEntity:
+    skip-every: default
+  mekanism-common-tile-multiblock-TileEntityStructuralGlass:
+    skip-every: default
+  mekanism-common-tile-multiblock-TileEntityBoilerCasing:
+    skip-every: default
+  mekanism-common-tile-multiblock-TileEntitySuperheatingElement:
+    skip-every: default
+  mekanism-common-tile-multiblock-TileEntityBoilerValve:
+    skip-every: default
+  net-minecraft-tileentity-EnchantingTableTileEntity:
+    skip-every: default
+  mekanism-common-tile-transmitter-TileEntityThermodynamicConductor:
+    skip-every: default
+  net-minecraft-tileentity-EndGatewayTileEntity:
+    skip-every: default
+  com-simibubi-create-content-contraptions-relays-elementary-SimpleKineticTileEntity:
+    skip-every: default
+  com-simibubi-create-content-contraptions-relays-belt-BeltTileEntity:
+    skip-every: default
+  com-simibubi-create-content-contraptions-components-motor-CreativeMotorTileEntity:
+    skip-every: default
+  com-simibubi-create-content-logistics-block-funnel-FunnelTileEntity:
+    skip-every: default
+  com-simibubi-create-content-logistics-block-mechanicalArm-ArmTileEntity:
+    skip-every: default
+  mekanism-common-tile-machine-TileEntityOredictionificator:
+    skip-every: default
+  com-simibubi-create-content-logistics-block-belts-tunnel-BrassTunnelTileEntity:
+    skip-every: default
+  cofh-core-tileentity-GlowAirTile:
+    skip-every: default
+  com-simibubi-create-content-contraptions-components-waterwheel-WaterWheelTileEntity:
+    skip-every: default
+  com-simibubi-create-content-contraptions-components-press-MechanicalPressTileEntity:
+    skip-every: default
+  com-simibubi-create-content-logistics-block-depot-DepotTileEntity:
+    skip-every: default
+  com-simibubi-create-content-contraptions-fluids-tank-FluidTankTileEntity:
+    skip-every: default
+  com-simibubi-create-content-contraptions-fluids-pipes-FluidPipeTileEntity:
+    skip-every: default
+  com-simibubi-create-content-contraptions-fluids-PumpTileEntity:
+    skip-every: default
+  com-simibubi-create-content-contraptions-fluids-pipes-FluidValveTileEntity:
+    skip-every: default
+  com-simibubi-create-content-contraptions-components-crank-HandCrankTileEntity:
+    skip-every: default
+  com-simibubi-create-content-contraptions-fluids-actors-SpoutTileEntity:
+    skip-every: default
+  com-simibubi-create-content-contraptions-fluids-actors-ItemDrainTileEntity:
+    skip-every: default
+  com-simibubi-create-content-contraptions-fluids-pipes-StraightPipeTileEntity:
+    skip-every: default
+  mekanism-common-tile-machine-TileEntityFormulaicAssemblicator:
+    skip-every: default
+  com-simibubi-create-content-contraptions-components-millstone-MillstoneTileEntity:
+    skip-every: default
+  mekanism-generators-common-tile-fission-TileEntityFissionReactorLogicAdapter:
+    skip-every: default
+  com-simibubi-create-content-contraptions-components-crafter-MechanicalCrafterTileEntity:
+    skip-every: default
+  com-simibubi-create-content-contraptions-components-deployer-DeployerTileEntity:
+    skip-every: default
+  com-simibubi-create-content-contraptions-components-crusher-CrushingWheelTileEntity:
+    skip-every: default
+  com-simibubi-create-content-contraptions-components-crusher-CrushingWheelControllerTileEntity:
+    skip-every: default
+  com-simibubi-create-content-contraptions-processing-BasinTileEntity:
+    skip-every: default
+  com-simibubi-create-content-contraptions-processing-burner-BlazeBurnerTileEntity:
+    skip-every: default
+  mekanism-common-tile-qio-TileEntityQIODriveArray:
+    skip-every: default
+  mekanism-common-tile-qio-TileEntityQIOExporter:
+    skip-every: default
+  mekanism-common-tile-qio-TileEntityQIOImporter:
+    skip-every: default
+  mekanism-common-tile-qio-TileEntityQIODashboard:
+    skip-every: default
+  net-minecraft-tileentity-ShulkerBoxTileEntity:
+    skip-every: default
+  com-simibubi-create-content-schematics-block-SchematicTableTileEntity:
+    skip-every: default
+  mekanism-common-tile-multiblock-TileEntityInductionCasing:
+    skip-every: default
+  mekanism-common-tile-multiblock-TileEntityInductionPort:
+    skip-every: default
+  mekanism-common-tile-multiblock-TileEntityInductionCell:
+    skip-every: default
+  mekanism-common-tile-multiblock-TileEntityInductionProvider:
+    skip-every: default
+  com-simibubi-create-content-schematics-block-SchematicannonTileEntity:
+    skip-every: default
+  com-simibubi-create-content-logistics-block-inventories-CreativeCrateTileEntity:
+    skip-every: default
+  net-minecraft-tileentity-DaylightDetectorTileEntity:
+    skip-every: default
+  com-minecolonies-api-tileentities-TileEntityEnchanter:
+    skip-every: default
+  mekanism-common-tile-TileEntityQuantumEntangloporter:
+    skip-every: default
